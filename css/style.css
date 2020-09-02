@@ -130,7 +130,7 @@ p {
   float: right;
   margin: 0px 0px 0 0;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.3rem;
   padding: 15px 2% 0 2%;
   /* padding: 15px 0 0 auto; */
   text-align: center;
@@ -154,6 +154,7 @@ p {
   /* background: #2e2e2e; */
   background: #e5e5e5;
   color: #3f3f3f;
+  /* text-align: center; */
 }
 
 .s1 ul {
@@ -164,6 +165,7 @@ p {
 
 .s1 p {
   line-height: 1.5rem;
+  margin: auto 1em;
 }
 
 .textPic {
@@ -192,6 +194,15 @@ p {
   flex-direction: column;
   color: rgba(255, 255, 255, 0.7);
 }
+.sectionAbout p {
+  line-height: 1.5rem;
+  margin: auto 1em;
+}
+
+.sectionAbout h1 {
+  line-height: 1.5rem;
+  margin: 1.5rem 1rem;
+}
 
 .s2Details {
   /* color: #3f3f3f; */
@@ -209,6 +220,24 @@ p {
   color: white;
   line-height: 1.5rem;
 }
+
+.s3 p {
+  line-height: 1.5rem;
+  margin: auto 1em;
+}
+
+.s3 h1 {
+  line-height: 1.5rem;
+  margin: 1.5rem 1rem;
+}
+
+
+.formSection{
+  line-height: 1.5rem;
+  margin: 1.5rem 1rem;
+
+}
+
 
 .email {
   color: #aabd46;
@@ -264,7 +293,8 @@ video {
 .sectionContact{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
 }
 
 footer{
@@ -370,4 +400,88 @@ footer{
   .mapSection{
     margin: auto;
   }
+}
+
+@media (min-width: 1400px) and (max-width: 2048px) {
+
+
+  .wrap {
+    min-width: 100vw;
+  }
+
+  .section {
+    min-width: 100vw;
+  }
+
+  .inner {
+    width: 100vw;
+  }
+
+  .innerNav {
+    width: 100vw;
+  }
+
+
+  .sTop {
+    min-height: 630px;
+    color: #3d3d3d;
+    background: #010704;
+  }
+
+
+  video {
+    z-index: -1;
+    min-width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .subMenu {
+    position: absolute;
+    top: 600px;
+    height: 50px;
+    z-index: 1000;
+    width: 100%;
+    max-width: 1140px;
+    min-width: 700px;
+    /* background: #93A14E; */
+    background: #77823F;
+
+  }
+
+  .mapSection{
+    margin: auto auto auto 5rem;
+  }
+
+  .innerS1{
+    /* text-align: center;
+    align-items: center; */
+    width: 50%;
+
+  }
+  .innerS1 ul {
+    /* margin-left: 40px;  */
+    padding-left: 2%;
+    line-height: 1.5rem;
+
+  }
+
+  .innerS1 p {
+    line-height: 1.5rem;
+    margin: auto 1em;
+    justify-content: space-around;
+  }
+
+  .innerS2 {
+    width: 50%;
+  }
+
+  .innerS3 {
+    width: 50%;
+  }
+
+
 }

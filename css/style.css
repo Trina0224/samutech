@@ -202,22 +202,6 @@ p {
   line-height: 1.5rem;
 }
 
-.s2Img {
-  /* background-image: url(../pics/Samu-Building-logo.jpg); */
-  background-image:
-    /* linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(63, 63, 63, 0.73)), */
-    url("../pics/Samu-Building-logo.jpg");
-  background-size: cover;
-  background-color: #3f3f3f;
-  background-position: center;
-  padding: 0 .5em 2em 2em;
-  /* display: flex;
-  flex-direction: row; */
-  /* justify-content: space-between; */
-  min-height: 80vh;
-  width: 50%;
-  height: 80%;
-}
 
 .s3 {
   min-height: 500px;
@@ -239,16 +223,6 @@ p {
   color: #fff;
 }
 
-/* .s4 {
-  min-height: 500px;
-  background: #504f4f;
-}
-
-.s5 {
-  min-height: 500px;
-  background: ##FFF8E7;
-  color: white;
-} */
 
 .video-container {
   height: 100%;
@@ -302,4 +276,20 @@ footer{
   flex-direction: row;
   justify-content: center;
   margin: auto;
+}
+
+
+
+/*Responsive Part */
+@media (min-width: 200px) and (max-width: 400px) {
+
+  body {
+  	display: flex;
+  	height: 100vh;
+  	flex-direction: column;
+  	/* justify-content: center;
+  	align-items: center;
+  	text-align: center; */
+  }
+
 }
